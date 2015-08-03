@@ -1,0 +1,177 @@
+/*Maze Game*/
+
+@font-face {
+    font-family: "pixel";
+    src: url("pixel.otf");
+}
+
+@font-face {
+    font-family: "Neou";
+    src: url("Neou-Thin.ttf");
+}
+
+element.style {
+    overflow-y: visible;
+}
+
+body
+{
+    background-color: #000000;
+    overflow: hidden;
+    margin: 20px;
+    padding: 0;
+    font-size: 0.85em;
+}
+
+.title
+{
+    text-align: center;
+    
+}
+
+h1 {
+    display: block;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+    margin: 0.67em 0;
+    line-height: 3;
+    font-family: pixel;
+}
+
+h2 {
+    font-size: 30px;
+    color: #000000;
+    font-family: pixel;
+}
+
+h3
+{
+    font-size: 28px;
+    color: #FFFFFF;
+    font-family: Neou;;
+}
+
+p {
+    font-size: 15px;
+    font-family: pixel;
+    color: #000000;
+    text-align: center;
+}
+
+#title #scene #intro {
+    display: block;
+    background: url("white.gif") no-repeat;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    z-index: 500;
+}
+
+#title #scene #intro .inner {
+    position: relative;
+    top: 20%;
+}
+
+.scroll-to {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -50px;
+    display: block;
+    background: url("arrow.png") no-repeat ;
+    height: 80px;
+    width: 200px;
+    z-index: 600;
+    transition: 0.3s;
+}
+
+#title #scene .scroll-to:hover {
+    transform: translateY(-20px);
+}
+
+#game #game-container {
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    z-index: 500;
+    transform: translateY(-50px);
+}
+
+#game {
+    background-color: #000000;
+}
+
+#about-us {
+    display: block;
+    background: #FFFFFF;
+}
+
+#about-us h3 {
+    font-family: pixel;
+}
+
+.impact-title {
+    font-size: 70px;
+    font-family: pixel;
+    color: #000000;
+    text-align: center;
+    margin: 0.5em 0 0;
+    text-transform: uppercase;
+}
+
+.container {
+    display: block;
+    height: 300px;
+}
+
+#creators li {
+    display: inline-block;
+    text-align: center;
+}
+
+#creators img {
+    margin: 10px;
+}
+
+#creators h3 {
+    color: #000000;
+}
+
+#creators {
+    text-align: center;
+}
+
+#mycanvas {
+    transform: translateY(30px);
+    margin: 50px;
+}
+
+#facts {
+    float: right;
+}
+
+.factscontainer {
+    margin: 10px;
+    text-align: center;
+    display: inline-block;
+    background: url(one.png);
+}
+
+.factscontainer h1 {
+    color: #000000;
+    font-size: 55px;
+    font-family: pixel;
+    margin: 0;
+}
+
+
+
+
+
+

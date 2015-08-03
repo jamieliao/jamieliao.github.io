@@ -46,8 +46,8 @@ var imgs = ["heart.png","mask.png"];
 var tokens = [];
 var counterMask = 0;
 var counterHeart = 0;
-var tokensName = ["Family","Love", "Support", "Friends", "Purpose", "Hope"];
-var masksName = ["Stress", "Trauma", "Social Expectations", "Chemical Imbalance", "Drugs","Unknown"];
+var tokensName = ["Family","Love", "Support", "Friends", "Purpose", "Hope", "Exercise", "Music", "Relax"];
+var masksName = ["Stress", "Trauma", "Social Expectations", "Chemical Imbalance", "Drugs","Unknown", "Negativity"];
 var tokensDes = ["Turn to family who make you feel loved because they want to help.",
                  "Remember to love yourself before anything and continue to enjoy your hobbies.",
                  "Reaching out is not a sign of weakness, and it won’t mean you’re a burden to others.",
@@ -59,7 +59,11 @@ var tokensDes = ["Turn to family who make you feel loved because they want to he
                  "Cope with transitions in a healthy manner by acknowledging that what you are feeling is expected and normal. Don't isolate yourself.",
                  "'The reason we struggle with insecurity is because we compare our behind-the-scenes with everyone else's highlight reel.' - Steve Furtick",
                  "Talk with your health care professional to find ways to address drug abuse or dependency directly.",
-                 "Sometimes you may be sad and you do not even know why."         
+                 "Sometimes you may be sad and you do not even know why." ,
+                 "Exercise is considered one the best anti-depressants." ,
+                 "Listen to music, for it provides opportunity for relaxation and appreciation." ,
+                 "Relaxation, such as enough hours of sleep or yoga and meditation, reduces stress." ,
+                 "Surround yourself with positivity."
 ];
 var ttokens = [];
 
@@ -190,7 +194,24 @@ var textToken = function(name,x,y) {
       }
       else if (this.name == "Unknown") {
          txt = tokensDes[11];
-         
+        
+      }
+      
+      else if (this.name == "Exercise") {
+         txt = tokensDes[12];
+      }
+      
+      else if (this.name == "Music") {
+         txt = tokensDes[13];
+      }
+
+      else if (this.name == "Relax") {
+         txt = tokensDes[14];
+   
+      }
+      
+      else if (this.name == "Negativity") {
+         txt = tokensDes[15];
       }
       fill(255);
       text(txt ,110, 510, 400, 200);
